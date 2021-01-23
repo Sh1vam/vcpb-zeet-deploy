@@ -11,9 +11,9 @@ TOKEN = environ.get("TOKEN")
 SUDO_USERS = int(environ.get("SUDO_USERS").split(","))
 GROUP = environ.get("GROUP")
 MONGO_DB_URI = environ.get("MONGO_DB_URI")
-USERS_MUST_JOIN = environ.get("USERS_MUST_JOIN", "False")
+USERS_MUST_JOIN = environ.get("USERS_MUST_JOIN", "True")
 LANG = environ.get("LANG", "en")
-DUR_LIMIT = environ.get("DUR_LIMIT", 10)
+DUR_LIMIT = environ.get("DUR_LIMIT", 30)
 
 API_ID = int(API_ID)
 
