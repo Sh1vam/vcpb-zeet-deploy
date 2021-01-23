@@ -16,7 +16,7 @@ LANG = environ.get("LANG", "en")
 DUR_LIMIT = environ.get("DUR_LIMIT", 10)
 
 API_ID = int(API_ID)
-SUDO_USERS = list(map(int, SUDO_USERS.split()))
+SUDO_USERS = list(map(int, SUDO_USERS))
 
 if type(GROUP) == str:
     GROUP = int(GROUP)
